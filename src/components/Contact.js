@@ -1,4 +1,6 @@
 import React from "react";
+import lbp_logo from "../pictures/lbp_logo.jpg";
+import lbp_map01 from "../pictures/lbp_map01.png";
 
 export default function Contact(){
     return(
@@ -6,7 +8,7 @@ export default function Contact(){
             <div className="leftSpace"></div>
             <div className="contact--content">
                 <div className="info--side">
-                    <div className="map"></div>
+                    <div className="map" style={{backgroundImage: `url(${lbp_map01})`}}></div>
                     <div className="info--side--text">
                         <div className="address">
                             <p className="info--title">ADDRESS:</p>
@@ -26,6 +28,7 @@ export default function Contact(){
                 </div>
                 <div className="form--side">
                     <form className="contact--form">
+                        <img className="contact--form--logo" src={lbp_logo} alt="lbp logo"/>
                         <input type="text" className="text--input" placeholder="Name"/>
                         <input type="email" className="text--input" placeholder="Email"/>
                         <input type="text" className="text--input" placeholder="Phone number"/>

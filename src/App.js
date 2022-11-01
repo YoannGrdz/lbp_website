@@ -10,20 +10,22 @@ import News from './components/News';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Shop from './components/Shop';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
-      <About/>
-      <TransitionOne/>
-      <Menu/>
-      <TransitionTwo/>
+      <Navbar />
+      <Home />
+      <About />
+      <TransitionOne />
+      <Menu />
+      <TransitionTwo />
       <Shop />
-      <News/>
-      <Testimonials/>
-      <Contact/>
+      <News />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 }
