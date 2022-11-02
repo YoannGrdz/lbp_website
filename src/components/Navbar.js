@@ -7,13 +7,67 @@ export default function Navbar(){
             <div className="navbar--logo">
                 <img className="navbar--logo--picture" src={lbp_logo} alt="lbp logo"/>
             </div>
-            <ul className="navbar--list">
-                <li>Home</li>
-                <li>Our story</li>
-                <li>Menu</li>
-                <li>Shop</li>
-                <li>News</li>
-                <li>Contact</li>
+            <ul className="navList">
+                <li>
+                    <p>Home</p>
+                    <div className="navList--item--bar">
+                        <div className="navList--item--bar--shiny"></div>
+                    </div>
+                    <div className="navList--item--arrow">
+                        <div className="arrow--tail"></div>
+                        <div className="arrow--head"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Our story</p>
+                    <div className="navList--item--bar">
+                        <div className="navList--item--bar--shiny"></div>
+                    </div>
+                    <div className="navList--item--arrow">
+                        <div className="arrow--tail"></div>
+                        <div className="arrow--head"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Menu</p>
+                    <div className="navList--item--bar">
+                        <div className="navList--item--bar--shiny"></div>
+                    </div>
+                    <div className="navList--item--arrow">
+                        <div className="arrow--tail"></div>
+                        <div className="arrow--head"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Shop</p>
+                    <div className="navList--item--bar">
+                        <div className="navList--item--bar--shiny"></div>
+                    </div>
+                    <div className="navList--item--arrow">
+                        <div className="arrow--tail"></div>
+                        <div className="arrow--head"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>News</p>
+                    <div className="navList--item--bar">
+                        <div className="navList--item--bar--shiny"></div>
+                    </div>
+                    <div className="navList--item--arrow">
+                        <div className="arrow--tail"></div>
+                        <div className="arrow--head"></div>
+                    </div>
+                </li>
+                <li>
+                    <p>Contact</p>
+                    <div className="navList--item--bar">
+                        <div className="navList--item--bar--shiny"></div>
+                    </div>
+                    <div className="navList--item--arrow">
+                        <div className="arrow--tail"></div>
+                        <div className="arrow--head"></div>
+                    </div>
+                </li>
             </ul>
             <div className="navbar--socials">
                 <div className="navbar--socials--social">fb</div>
