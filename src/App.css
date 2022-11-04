@@ -434,6 +434,7 @@ body {
 }
 
 /* Shop ------------------------------------------------- */
+
 .shop {
   display: flex;
   flex-direction: row;
@@ -462,12 +463,22 @@ body {
 
 }
 
+.products:hover .product {
+  opacity: 0.5;
+}
+
+.products:hover > .product:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
 .product {
   height: 100%;
   width: 30%;
   border: 2px solid black;
   position: relative;
   border-radius: 0.5rem;
+  transition: 0.5s;
 }
 
 .product--picture {
