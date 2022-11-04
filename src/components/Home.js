@@ -7,7 +7,7 @@ export default function Home(){
 
 
     return(
-        <div className="home">
+        <div className="home" id="home">
             <div className="leftSpace"></div>
             <div className="home--content" style={{backgroundImage : `url(${lbp_coffeeCup03})`}}>
                 <div className="home--content--headers">

@@ -3,7 +3,7 @@ import NewsCard from "./NewsCard";
 
 export default function News(){
     return(
-        <div className="news">
+        <div className="news" id="news">
             <div className="leftSpace"></div>
             <div className="news--content">
                 <div className="news--content--text">

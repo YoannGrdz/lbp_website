@@ -7,7 +7,7 @@ export default function Menu(){
 
 
     return(
-        <div className="menu">
+        <div className="menu" id="menu">
             <div className="leftSpace"></div>
             <div className="menu--content">
                 <div className="menu--content--pictures">

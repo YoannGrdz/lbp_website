@@ -4,7 +4,7 @@ import lbp_map01 from "../pictures/lbp_map01.png";
 
 export default function Contact(){
     return(
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="leftSpace"></div>
             <div className="contact--content">
                 <div className="info--side">

@@ -5,7 +5,7 @@ import lbp_products06 from "../pictures/lbp_products06_cropped.png";
 
 export default function Shop(){
     return(
-        <div className="shop">
+        <div className="shop" id="shop">
             <div className="leftSpace"></div>
             <div className="shop--content">
                 <p className="overheader">Purchase</p>
