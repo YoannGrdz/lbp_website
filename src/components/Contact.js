@@ -35,7 +35,6 @@ export default function Contact(){
                         <input type="text" className="text--input" placeholder="Message"/>
                         <button type="submit" className="submit--button">SUBMIT</button>
                     </form>
-
                 </div>
             </div>
         </div>

@@ -5,14 +5,31 @@ import lbp_food05 from "../pictures/lbp_food05_cropped.png";
 
 export default function Menu(){
 
+    // intersection observer code ---
+    const menuRef = React.useRef();
+    const [menuVisible, setMenuVisible] = React.useState();
+
+    React.useEffect(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setMenuVisible(entry.isIntersecting);
+        },{
+            threshold: 0.5,
+        })
+        observer.observe(menuRef.current);
+    
+    }, [])
+    // ---
+    
 
     return(
-        <div className="menu" id="menu">
+        <div className="menu" id="menu" ref={menuRef}>
             <div className="leftSpace"></div>
             <div className="menu--content">
                 <div className="menu--content--pictures">
-                    <div className="menu--picture1" style={{backgroundImage : `url(${lbp_customer02})`}}></div>
-                    <div className="menu--picture2" style={{backgroundImage : `url(${lbp_food05})`}}></div>
+                    <div className={menuVisible ? "menu--picture1 menu--picture1--visible" : "menu--picture1"} style={{backgroundImage : `url(${lbp_customer02})`}}></div>
+                    <div className={menuVisible ? "menu--picture2 menu--picture2--visible" : "menu--picture2"} style={{backgroundImage : `url(${lbp_food05})`}}></div>
                 </div>
                 <div className="menu--content--text">
                     <p className="overheader">Discover</p>

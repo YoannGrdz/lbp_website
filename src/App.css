@@ -26,6 +26,7 @@ font-family: 'Poppins', sans-serif;
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .leftSpace {
@@ -61,6 +62,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   font-family: 'Josefin Sans', sans-serif;
+  z-index: 7;
 }
 
 .navbar--logo {
@@ -376,6 +378,14 @@ body {
   height: 80%;
   background-size: cover;
   border-radius: 0.5rem;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 1s;
+}
+
+.about--picture1--visible {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 .about--picture2 {
@@ -384,8 +394,16 @@ body {
   height: 80%;
   background-size: cover;
   border-radius: 0.5rem;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: 1s;
 }
 
+
+.about--picture2--visible {
+  opacity: 1;
+  transform: translateX(0%);
+}
 
 /* Menu ------------------------------------------------- */
 
@@ -434,6 +452,14 @@ body {
   height: 80%;
   border-radius: 0.5rem;
   background-size: cover;
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(-100%);
+}
+
+.menu--picture1--visible {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 .menu--picture2 {
@@ -442,6 +468,14 @@ body {
   height: 80%;
   border-radius: 0.5rem;
   background-size: cover;
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(100%);
+}
+
+.menu--picture2--visible {
+  opacity: 1;
+  transform: translateX(0%);
 }
 
 /* Shop ------------------------------------------------- */
@@ -624,6 +658,14 @@ body {
   height: 55%;
   border-radius: 0.7rem;
   gap: 2.5rem;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: 1.3s;
+}
+
+.review--visible {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .review--text {

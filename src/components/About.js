@@ -4,9 +4,25 @@ import lbp_interior03 from "../pictures/lbp_interior03__cropped.png"
 
 export default function About(){
 
+    // intersection observer code ---
+    const aboutRef = React.useRef();
+    const [aboutVisible, setAboutVisible] = React.useState();
+
+    React.useEffect(() => {
+
+        const aboutObserver = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setAboutVisible(entry.isIntersecting);
+        },{
+            threshold: 0.5,
+        })
+        aboutObserver.observe(aboutRef.current);
+    
+    }, [])
+    // ---
 
     return(
-        <div className="about" id="about">
+        <div className="about" id="about" ref={aboutRef}>
             <div className="leftSpace"></div>
             <div className="about--content">
                 <div className="about--content--text">
@@ -15,8 +31,8 @@ export default function About(){
                     <p className="about--content--text--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <div className="about--content--pictures">
-                    <div className="about--picture1" style={{backgroundImage : `url(${lbp_staff01})`}}></div>
-                    <div className="about--picture2" style={{backgroundImage : `url(${lbp_interior03})`}}></div>
+                    <div className={aboutVisible ? "about--picture1 about--picture1--visible" : "about--picture1"} style={{backgroundImage : `url(${lbp_staff01})`}}></div>
+                    <div className={aboutVisible ? "about--picture2 about--picture2--visible" : "about--picture2"} style={{backgroundImage : `url(${lbp_interior03})`}}></div>
                 </div>
             </div>
         </div>
