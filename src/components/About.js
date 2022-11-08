@@ -17,7 +17,7 @@ export default function About(){
             threshold: 0.5,
         })
         aboutObserver.observe(aboutRef.current);
-    
+        
     }, [])
     // ---
 
