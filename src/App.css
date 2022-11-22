@@ -169,19 +169,21 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .navbar--socials--social {
   font-size: 1.3rem;
   width: 2.7rem;
   height: 2.7rem;
-  border: 2px solid var(--ivory);
-  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--ivory);
+}
+
+.social--img{
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -320,21 +322,21 @@ body {
   opacity: 1;
   width: 5rem;
   transition: 3s;
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 .smallLetters2 {
   opacity: 1;
   width: 19rem;
   transition: 3s;
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 .smallLetters3 {
   opacity: 1;
   width: 17rem;
   transition: 3s;
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 .smallLetters--fold {
@@ -349,7 +351,7 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   opacity: 0;
   transition: 2s;
-  transition-delay: 4s;
+  transition-delay: 5s;
   transform: translateY(-3rem);
 }
 
@@ -369,7 +371,7 @@ body {
   animation: arrowDown 2s ease-in-out infinite;
   opacity: 0;
   transition: 1s;
-  transition-delay: 5s;
+  transition-delay: 7s;
 }
 
 .home--downArrow--visible {

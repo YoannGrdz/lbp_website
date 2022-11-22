@@ -1,5 +1,8 @@
 import React from "react";
 import lbp_logo from "../pictures/lbp_logo.jpg";
+import facebook_logo from "../icons/facebook.png";
+import instagram_logo from "../icons/instagram.png";
+import twitter_logo from "../icons/twitter.png";
 
 export default function Navbar(){
     return (
@@ -82,9 +85,9 @@ export default function Navbar(){
                 </li>
             </ul>
             <div className="navbar--socials">
-                <div className="navbar--socials--social">fb</div>
-                <div className="navbar--socials--social">i</div>
-                <div className="navbar--socials--social">t</div>
+                <div className="navbar--socials--social"><img className="social--img" src={instagram_logo} alt="instagram logo"/></div>
+                <div className="navbar--socials--social"><img className="social--img" src={facebook_logo} alt="facebook logo"/></div>
+                <div className="navbar--socials--social"><img className="social--img" src={twitter_logo} alt="twitter logo"/></div>
             </div>
         </div>
     )
