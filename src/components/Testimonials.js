@@ -27,11 +27,10 @@ export default function Testimonials(){
                 <p className="transition--overheader">What our clients say</p>
                 <h2 className="transition--header">about us</h2>
                 <div className={testimonialsVisible ? "review review--visible" : "review"}>
-                    <p className="review--text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                    <p className="review--text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
                     <p className="review--author">- JANE DOE SAN</p>
                 </div>
             </div>
-
         </div>
     )
 }

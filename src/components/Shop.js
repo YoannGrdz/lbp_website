@@ -24,6 +24,7 @@ export default function Shop(){
                         <p className="product--name">consectetur adipiscing</p>
                     </div>
                 </div>
+                <button className="section--button">View all our products</button>
             </div>
         </div>
     );

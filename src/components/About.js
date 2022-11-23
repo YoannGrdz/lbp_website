@@ -29,6 +29,7 @@ export default function About(){
                     <p className="overheader">Find out</p>
                     <h2 className="section--header">our story</h2>
                     <p className="about--content--text--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button className="section--button">Our Story</button>
                 </div>
                 <div className="about--content--pictures">
                     <div className={aboutVisible ? "about--picture1 about--picture1--visible" : "about--picture1"} style={{backgroundImage : `url(${lbp_staff01})`}}></div>

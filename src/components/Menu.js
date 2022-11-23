@@ -35,6 +35,7 @@ export default function Menu(){
                     <p className="overheader">Discover</p>
                     <h2 className="section--header">our menu</h2>
                     <p className="menu--content--text--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button className="section--button">View full menu</button>
                 </div>
             </div>
         </div>
